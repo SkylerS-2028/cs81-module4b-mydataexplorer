@@ -56,3 +56,14 @@ const weekData = [
         focusLevel:6
     }
 ];
+
+/* Predictions:
+Which day had the most screen time? 
+Tuesday and Wednesday
+
+Best focus day? 
+Tuesday
+
+Is more caffeine helping? 
+Caffeine and focus level have little consistent coorelation in the data. 
+*/
