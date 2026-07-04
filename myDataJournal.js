@@ -1,0 +1,58 @@
+const weekData = [
+    {
+        day:"Monday", 
+        sleepHours:5, 
+        screenTime:3, // hours
+        mood:"tired",
+        caffeineIntake:1, // cups
+        focusLevel:3 //1-10
+    },
+    {
+        day:"Tuesday",
+        sleepHours:8,
+        screenTime:6,
+        mood:"content",
+        caffeineIntake:2,
+        focusLevel:9
+    },
+    {
+        day:"Wednesday",
+        sleepHours:8,
+        screenTime:6,
+        mood:"busy",
+        caffeineIntake:2,
+        focusLevel:8
+    },
+    {
+        day:"Thursday",
+        sleepHours:8,
+        screenTime:5,
+        mood:"content",
+        caffeineIntake:2,
+        focusLevel:7
+    },
+    {
+        day:"Friday",
+        sleepHours:8,
+        screenTime:3,
+        mood:"happy",
+        caffeineIntake:3,
+        focusLevel:4
+    },
+    {
+        day:"Saturday",
+        sleepHours:6,
+        screenTime:5,
+        mood:"happy",
+        caffeineIntake:2,
+        focusLevel:8
+    },
+    {
+        day:"Sunday",
+        sleepHours:8,
+        screenTime:4,
+        mood:"content",
+        caffeineIntake:2,
+        focusLevel:6
+    }
+];
