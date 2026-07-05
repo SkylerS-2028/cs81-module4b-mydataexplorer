@@ -1,3 +1,6 @@
+// Skyler Stevenson
+// https://github.com/SkylerS-2028/cs81-module4b-mydataexplorer
+
 const weekData = [
     {
         day:"Monday", 
@@ -83,7 +86,7 @@ function mostFrequentMood(set){
             highest = mood;
         }
     }
-    return highest
+    return highest;
 }
 
 function bestFocus(set){
