@@ -57,6 +57,15 @@ const weekData = [
     }
 ];
 
+function averageCaffeineIntake(set){
+    let total = 0;
+    for(let entry of set){
+        total += entry.caffeineIntake;
+    }
+    return total/set.length;
+}
+
+
 /* Predictions:
 Which day had the most screen time? 
 Tuesday and Wednesday
