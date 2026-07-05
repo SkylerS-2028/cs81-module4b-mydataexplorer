@@ -65,6 +65,28 @@ function averageCaffeineIntake(set){
     return total/set.length;
 }
 
+function mostFrequentMood(set){
+    const moods = {};
+    for (let entry of set){
+        if(!moods[entry.mood]){
+            moods[entry.mood] = 1;
+        }
+        else{
+            moods[entry.mood] += 1;
+        }
+    }
+    let highest = "";
+    let count = 0;
+    for (let mood in moods){
+        if(moods[mood] > count){
+            count = moods[mood];
+            highest = mood;
+        }
+    }
+    return highest
+}
+
+console.log(frequentMood(weekData));
 
 /* Predictions:
 Which day had the most screen time? 
