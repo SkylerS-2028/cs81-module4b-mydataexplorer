@@ -99,6 +99,31 @@ function bestFocus(set){
     return day;
 }
 
+function caffeineFocusCoorelation(set){
+    let table = [0, 0, 0, 0];
+    for(let entry of set){
+        if(entry.caffeineIntake < 2 && entry.focusLevel < 6){
+            table[0] += 1;
+        }
+        else if(entry.caffeineIntake < 2 && entry.focusLevel > 5){
+            table[1] += 1;
+        }
+        else if(entry.caffeineIntake > 0 && entry.focusLevel < 6){
+            table[2] += 1;
+        }
+        else{
+            table[3] += 1;
+        }
+    }
+
+    return (table[3] * table[0] - table[2] * table[1]) /
+    Math.sqrt((table[2] + table[3]) *
+              (table[0] + table[1]) *
+              (table[1] + table[3]) *
+              (table[0] + table[2]));
+}
+
+
 /* Predictions:
 Which day had the most screen time? 
 Tuesday and Wednesday
