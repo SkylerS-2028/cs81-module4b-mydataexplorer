@@ -86,7 +86,18 @@ function mostFrequentMood(set){
     return highest
 }
 
-console.log(frequentMood(weekData));
+function bestFocus(set){
+    const focus = {};
+    let day = "";
+    let hour = 0;
+    for (let entry of set){
+        if(entry.focusLevel > hour){
+            hour = entry.focusLevel;
+            day = entry.day;
+        }
+    }
+    return day;
+}
 
 /* Predictions:
 Which day had the most screen time? 
